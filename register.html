@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fox Day Registration</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Fox Day Event Registration 🦊</h1>
+    </header>
+
+    <main> 
+        <h2>Register for Fox Day!</h2>
+
+        <p>
+            Secure your spot at the most magical day of the year! 
+            <br>
+            Fill out the form below to register for an event.
+        </p>
+            <br>
+
+        <form action="process.php" method="post">
+
+            Student Name:
+            <input type="text" name="name" required>
+            <br><br>
+
+            Email Address:
+            <input type="email" name="email" required>
+            <br><br>
+            
+            Choose Your Fox Day Event:
+            <select name="event" required>
+                <option value="">-- Pick ONLY one --</option>
+                <option value="Midnight Fox Movie Lawn">Midnight Fox Movie Lawn</option>
+                <option value="Fox Tales & Treats">Fox Tales & Treats</option>
+                <option value="Mystery Destination Bus Ride">Mystery Destination Bus Ride</option>
+                <option value="Campus-Wide Clue Hunt: Find the Fox">Campus Clue Hunt: Find the Fox</option>
+                <option value="Fox Day Picnic & Lemonade">Fox Day Picnic & Lemonade</option>
+                <option value="Photo Booth: Fox Ears Edition">Photo Booth: Fox Ears Edition</option>
+            </select>
+            <br><br>
+
+            School Year Classification:
+            <br>
+            <input type="radio" name="year" value="Freshman" required> Freshman
+            <input type="radio" name="year" value="Sophomore"> Sophomore
+            <input type="radio" name="year" value="Junior"> Junior
+            <input type="radio" name="year" value="Senior"> Senior
+            <br><br>
+
+            Rank your Fox Day vibe (1 = not me, 5 = SO ME!):
+            <br>
+            Adventure Level:
+            <input type="number" name="adventure_rank" min="1" max="5">
+            <br>
+            Chill Level:
+            <input type="number" name="chill_rank" min="1" max="5">
+            <br> <br>
+
+            What are you most excited about for Fox Day? (Be specific!)
+            <br>
+            <textarea name="message" rows="4" cols="45"
+            placeholder="Share your Fox Day excitement with us..." required > </textarea>
+            <br><br>
+            
+            <input type="checkbox" name="secret" value="yes">
+            I vow not to spoil Fox Day for anyone! 🤫
+            <br><br>
+
+
+            <button type="submit" >Complete Registration 🦊</button>
+        </form>
+    </main>
+        
+    <nav>
+        <ul>
+            <li><a href="index.html">Go back to the Home page</a></li>
+            <li><a href="events.php">View Events Information</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>"Today is too pretty to have class!" - Happy Fox Day! 🌸
+        <br> <br>
+            © 2026 Fox Day Campus Events | Keep the surprise magical 🦊✨
+        </p>
+    </footer>
+</body>
+</html>
